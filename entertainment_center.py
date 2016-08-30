@@ -1,20 +1,11 @@
-import media
-import fresh_tomatoes
+import media, fresh_tomatoes
 
-toy_story = media.Movie("Toy Story",
-						" A story of his boys and his toys that come to life",
-						"https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
-						"https://www.youtube.com/watch?v=vwyZH85NQC4")
+# List that holds the names of movies that will be shown on the webpage
+movieTitles = ["Mr. and Mrs. Smith", "Titanic", "Edward Scissorhands", "The Dark Knight", "Maze Runner", "Billy Elliot"]
 
-avatar = media.Movie("Avatar",
-					 "A marine on an alien planet",
-					 "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
-					 "https://www.youtube.com/watch?v=5PSNL1qE6VY")
+# Creates a list of Movie objects using the provided titles.  Using this method, movie title can be added/removed
+# from the moviesTitle list without having to change any other code
+moviesList = [media.Movie(movieTitles[i]) for i in range(0,len(movieTitles))]
 
-school_of_rock = media.Movie("Shool of Rock",
-							 "Storyline",
-							 "http://static.rogerebert.com/uploads/movie/movie_poster/school-of-rock-2003/large_cREN222Yw78zvSQ9bg17Y9QZS0c.jpg",
-							 "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
-
-movies = [toy_story, avatar, school_of_rock]
-fresh_tomatoes.open_movies_page(movies)
+# Passes the moviesList list to the fresh_tomatoes.py which populates the page with information
+fresh_tomatoes.open_movies_page(moviesList)
