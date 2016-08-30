@@ -21,6 +21,12 @@ The project files have been uploaded into the following Github repository where 
 
 Once the files have been downloaded, unzip them and open the 'entertainment_center.py'.  Then run this code using a Python compiler to enjoy a list of my favorite movies!
 
+## TheMovieDB API
+Documentation about TheMovieDB API can be found on their website at the following address:
+
+*[https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api)
+
+
 ##Future direction the App
 
 Moving forward, I would like to look into transitioning to a dynamic web page that would allow the user to add their own favorite movies to the page.  Using the Movie class structure, the only thing needed is a title to add a poster and trailer to the page.
